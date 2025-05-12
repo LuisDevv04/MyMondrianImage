@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Mondrian</title>
+    <style>
+        body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: antiquewhite;
+      }
+
+      .mondrian{
+        display:grid;
+        background-color: black;
+        width: 600px;
+        height: 650px;
+        gap: 9px;
+        grid-template-columns: 100px 174px 180px 120px;
+        grid-template-rows: 260px 150px 190px 10px;
+        border: 10px solid black;
+      }
+    
+      .item{
+        background-color: white;
+      }
+
+      .item.blue{
+        background-color: rgb(38, 38, 129);
+        grid-column: span 2;
+      }
+
+      .item.white1{
+        grid-column: span 2;
+      }
+
+      .item.white2{
+        grid-column: span 2;
+      }
+
+      .item.white3{
+        grid-column: span 2;
+      }
+
+      .item.yellow{
+        background-color: rgb(255, 208, 0);
+        grid-row: span 3;
+      }
+
+      .item.white4{
+        grid-row: span 3;
+      }
+
+      .item.white5{
+        grid-row: span 2;
+      }
+
+      .item.red{
+        background-color: rgba(255, 0, 0, 0.938);
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      .item.white6{
+        grid-row: span 3;
+      }
+    </style>
+</head>
+<body>
+    <div class="mondrian">
+        <div class="item blue"></div>
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item yellow"></div>
+        <div class="item  white4"></div>
+        <div class="item red"></div>
+        <div class="item white6"></div>
+        <div class="item white5"></div>
+
+    </div>
+    
+    
+</body>
+</html>
